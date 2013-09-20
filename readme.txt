@@ -20,6 +20,10 @@ El plugin hace consultas a servicios de GeoIP para consultar la procedencia del 
 
 El plugin también hace uso del plugin de cacheo W3 Total Cache, para cachear el resultado de la llamada al servicio de GeoIP, por tener éstos una limitación en el número de llamadas.
 
+**Para desarrolladores**
+
+El código está versioando y es público para todo aquel que quiera colaborar en el desarrollo o mejoras del plugin. <a href="https://github.com/elpeter/wordpress-cookie-espana">https://github.com/elpeter/wordpress-cookie-espana</a>
+
 == Installation ==
 
 Para instalar el plugin.
