@@ -5,14 +5,13 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Este plugin aporta la funcionalidad para hacer cumplir la ley de cookies en España informado al usuario de que el sitio usa las cookies propias o de terceros para mejorar el servicio de navegación, preferencias, mediciones y/o publicidad
+Este plugin aporta la funcionalidad para hacer cumplir la ley de cookies en España.
 
 == Description ==
 
-El plugin muestra a los usuarios que tienen ip española el mensaje advirtiendo de que el blog visitado usa cookies para diferentes fines.
+Este plugin aporta la funcionalidad para hacer cumplir la ley de cookies en España informado al usuario de que el sitio usa las cookies propias o de terceros para mejorar el servicio de navegación, preferencias, mediciones y/o publicidad.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+Se muestra a los usuarios que tienen ip española el mensaje advirtiendo de que el blog visitado usa cookies para diferentes fines.
 
 El plugin adicionalmente crea una página en tu blog llamada "Política de cookies", en la que el administrador del blog tendrá que indicar el texto legal con todas las cookies que esté usando en el blog. Por defecto se añade un breve texto advirtiendo que hay que completar esta página y un link a un pdf de la agencia españaola de protección de datos. 
 Esta página no aparece completa automáticamente porque cada blog tendrá diferentes funcionalidades o herramientas que añaden cookies y el administrador del blog debe indicar cuales está agregado.
@@ -27,6 +26,7 @@ Para instalar el plugin.
 
 1. Descarga el plguin y súbelo a la carpeta `/wp-content/plugins/`
 2. Activa el plugin.
+3. Edita la página de "Política de cookies" indicando el texto legal y la información de cookies que usa tu blog
 
 O bien puedes descargarlo directamente desde la sección Plugins dentro del panel de tu blog. 
 
@@ -34,6 +34,7 @@ O bien puedes descargarlo directamente desde la sección Plugins dentro del pane
 2. Haz click en el enlace `Añadir nuevo`
 3. En el buscador, escribe "Cookie España"
 4. Haz click en instalar
+5. Edita la página de "Política de cookies" indicando el texto legal y la información de cookies que usa tu blog
 
 == Frequently Asked Questions ==
 
