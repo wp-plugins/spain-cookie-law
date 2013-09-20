@@ -29,25 +29,12 @@ Para instalar el plugin.
 2. Activa el plugin.
 
 O bien puedes descargarlo directamente desde la sección Plugins dentro del panel de tu blog. 
+
 1. Ir a la sección Plugin.
 2. Haz click en el enlace `Añadir nuevo`
 3. En el buscador, escribe "Cookie España"
 4. Haz click en instalar
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
-
 == Frequently Asked Questions ==
 
 Si tienes dudas, preguntas o te da errores ponte en contacto conmigo. <a href="http://www.pedroventura.com/contacto/">http://www.pedroventura.com/contacto/</a>
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
-(or jpg, jpeg, gif).
-2. This is the second screen shot
-
-
