@@ -3,7 +3,7 @@
  * Plugin Name: Cookie Ley Española
  * Plugin URI: http://www.pedroventura.com/internet/plugin-en-wordpress-cumplir-ley-espanola
  * Description: Este plugin aporta la funcionalidad para hacer cumplir la ley de cookies en España informado al usuario de que el sitio usa las cookies propias o de terceros para mejorar el servicio de navegación, preferencias, mediciones y/o publicidad
- * Version: 1.2
+ * Version: 1.2.1
  * Author: Pedro Ventura
  * Author URI: http://www.pedroventura.com/
  */
@@ -47,7 +47,7 @@ function cookie_menu() {
 			$checkGeoip = $_POST['geoip'];
 		}
 		update_option( 'wp_cookie_ley_espana_geoip', comprobar_check( $checkGeoip ) );
-		header('Location: /wp-admin/admin.php?page=cookie_ley_espana&settings-updated=true');
+		header('Location: admin.php?page=cookie_ley_espana&settings-updated=true');
 		exit;
 	}
 }
@@ -161,7 +161,7 @@ function iniciar_app_cookie() {
 	<script type="text/javascript">
 	jQuery(document).ready(function() {
 		CookieLegal.inicio({
-			ajaxCallback: "/wp-admin/admin-ajax.php",
+			ajaxCallback: "<?php echo home_url(); ?>/wp-admin/admin-ajax.php",
 			checkGeoip: "<?php echo $checkGeoip;?>",
 			mensaje: "<?php echo $mensaje;?>",
 			pagePermanlink:"<?php echo page_slug();?>",
@@ -232,7 +232,7 @@ function comprobar_opciones() {
 	// opcion para habilitar el geoip
 	$geoip = get_option( 'wp_cookie_ley_espana_geoip' );
 	if ( empty( $geoip ) ) {
-		update_option( 'wp_cookie_ley_espana_geoip', 'on' );
+		update_option( 'wp_cookie_ley_espana_geoip', 'off' );
 	}
 	// comprobación del id de la página
 	$paginaId = get_option( 'wp_cookie_ley_espana_page_id' );

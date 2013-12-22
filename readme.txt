@@ -1,7 +1,7 @@
-=== Cookie Ley Española ===
+=== Wordpress Plugin Ley Cookie ===
 Tags: Cookie, cookies, ley, law, Spain, España
-Tested up to: 3.7.1
-Stable tag: 1.2
+Tested up to: 3.8
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ El plugin también hace uso del plugin de cacheo W3 Total Cache, para cachear el
 
 **Para desarrolladores**
 
-El código está versionado y es público para todo aquel que quiera colaborar en el desarrollo o mejoras del plugin. <a href="https://github.com/elpeter/wordpress-cookie-espana">https://github.com/elpeter/wordpress-cookie-espana</a>
+El código está versionado y es público para todo aquel que quiera colaborar en el desarrollo o mejoras del plugin. <a href="https://github.com/elpeter/wordpress-plugin-ley-cookie">https://github.com/elpeter/wordpress-plugin-ley-cookie</a>
 
 == Screenshots ==
 
