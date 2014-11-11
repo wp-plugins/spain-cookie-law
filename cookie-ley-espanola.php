@@ -3,7 +3,7 @@
  * Plugin Name: Cookie Ley Española
  * Plugin URI: http://www.pedroventura.com/internet/plugin-en-wordpress-cumplir-ley-espanola
  * Description: Este plugin aporta la funcionalidad para hacer cumplir la ley de cookies en España informado al usuario de que el sitio usa las cookies propias o de terceros para mejorar el servicio de navegación, preferencias, mediciones y/o publicidad
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author: Pedro Ventura
  * Author URI: http://www.pedroventura.com/
  */
@@ -163,7 +163,10 @@ function iniciar_app_cookie() {
 		CookieLegal.inicio({
 			ajaxCallback: "<?php echo home_url(); ?>/wp-admin/admin-ajax.php",
 			checkGeoip: "<?php echo $checkGeoip;?>",
-			mensaje: "<?php echo $mensaje;?>",
+			mensaje: "<?php
+				echo str_replace("\n", "<br />",
+					str_replace("\r\n", "\n", $mensaje));
+					?>",
 			pagePermanlink:"<?php echo page_slug();?>",
 			tituloPagina: "<?php echo $tituloPagina;?>",
 			web: "<?php echo str_replace( 'http://', '', home_url() ); ?>", 
