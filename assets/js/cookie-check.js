@@ -58,7 +58,6 @@ var CookieLegal = {
 	},
 
 	// funcion que se encarga de mostrar el mensaje legal
-	// @todo: Posible mejora para sacar el texto y que se pueda configurar desde el dashboard de WP.
 	cargaMensaje: function _cargaMensaje() {
 		laCookie = CookieLegal.leerCookie();
 		if ( laCookie != 2 ) {
@@ -68,7 +67,7 @@ var CookieLegal = {
 
 	// funcion para leer el valor de la cookie
 	leerCookie: function _leerCookie() {
-		laCookie = parseInt( jQuery.cookie( 'cookie_legal_' + CookieLegal.web ) );
+		laCookie = parseInt( jQuery.cookie( 'cookie_legal_' + CookieLegal.web ), 10 );
 		return laCookie;
 	},
 
