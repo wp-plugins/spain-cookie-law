@@ -47,8 +47,6 @@ var CookieLegal = {
 		laCookie = CookieLegal.leerCookie();
 		if ( isNaN( laCookie ) ) {
 			CookieLegal.setearCookie( 1 );
-		} else {
-			CookieLegal.setearCookie( 2 );
 		}
 	},
 
@@ -61,7 +59,7 @@ var CookieLegal = {
 	cargaMensaje: function _cargaMensaje() {
 		laCookie = CookieLegal.leerCookie();
 		if ( laCookie != 2 ) {
-			jQuery( 'body' ).prepend( '<div id="wrapperMensajeCookie" class="wrapperMensajeCookie"><div class="inner"><div class="textoLegalCookie"><p><strong>'+ CookieLegal.tituloPagina +'</strong></p><p> '+ CookieLegal.mensaje +' .<a href="'+ CookieLegal.pagePermanlink +'" target="_blank"> '+ CookieLegal.tituloPagina +'  </a>.</p><a onclick="jQuery(\'#wrapperMensajeCookie\').hide();" class="cerrarTextoLegalCookie" title="Cerrar"></a></div></div></div>' );
+			jQuery( 'body' ).prepend( '<div id="wrapperMensajeCookie" class="wrapperMensajeCookie"><div class="inner"><div class="textoLegalCookie"><p><strong>'+ CookieLegal.tituloPagina +'</strong></p><p> '+ CookieLegal.mensaje +' <a href="'+ CookieLegal.pagePermanlink +'" target="_blank"> '+ CookieLegal.tituloPagina +'  </a>.</p><a onclick="javascript:CookieLegal.cerrarModal();" class="cerrarTextoLegalCookie" title="Cerrar"></a></div></div></div>' );
 		}
 	},
 
@@ -69,6 +67,12 @@ var CookieLegal = {
 	leerCookie: function _leerCookie() {
 		laCookie = parseInt( jQuery.cookie( 'cookie_legal_' + CookieLegal.web ), 10 );
 		return laCookie;
+	},
+
+	cerrarModal: function _cerrarModal() {
+		console.log('cerrado');
+		jQuery('#wrapperMensajeCookie').hide();
+		CookieLegal.setearCookie( 2 );
 	},
 
 	// funcion de inicialización
